@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav__list{          
+    display: flex;
+    background: #473528;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav__item{
+    border-radius: 3px;
+}
+
+.nav__item:hover{
+    background-color: rgba( 0, 0, 0, .3);
+    transition: .4s;
+}
+
+.nav__item--secc{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 20px 80px;
+}
+
+.hero{
+    display: flex;
+    height: 92vh;
+    align-items: center;
+    background-color: #533d26;
+}
+
+.hero__contenedor{
+    padding: 20px 20px 15px 30px;
+    width: 100%;
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.hero__img{
+    width: 100%;
+    padding: 10px;
+}
+
+.hero__contenedor--h1{
+    font-size: 140px;
+    padding: 10px 7px
+}
+
+.hero__contenedor--h2{
+    font-size: 50px;
+    padding: 20px 15px;
+    color: whitesmoke;
+}
+
+.hero__contenedor--h3{
+    font-size: 30px;
+    padding: 20px 15px;
+    color: whitesmoke;
+}
+
+.separador{
+    height: 5px;
+    background-color: black;
+}
+
+.referencia{
+    background-color: #533d26;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 10px 30px;
+}
+
+.referencia__titulo{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.referencia__titulo--principal{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 40px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.referencia__contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.referencia__miembro{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.referencia__img{
+    width: 250px;
+    align-items: center;
+}
+
+.referencia__parrafo{
+    color: whitesmoke;
+    font-family: cursive;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    height: 70vh;
+    background-color: #533d26;
+    align-items: center;
+}
+
+.menu__titulo--principal{
+    font-size: 50px;
+}
+
+.menu__parrafo{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 30px;
+    padding: 15px 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.menu__parrafo--edit{
+    padding: 10px;
+}
+
+.menu__img{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.historia{
+    display: flex;
+    height: 95vh;
+    background-color: #533d26;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.historia__titulo{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 60px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.historia__parrafo{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: justify;
+    padding: 10px;
+}
+
+.historia__audio{
+    margin: 20px;
+    width: 700px;
+}
+
+.historia__fundador{
+    width: auto;
+    padding: 10px;
+}
+
+.galeria{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto;
+    gap: 15px 30px; 
+    width: 100%;
+    background-color: #533d26;
+  }
+
+.galeria__contenido{
+    width: 98%;
+    height: 100%;
+    padding: 15px;
+    object-fit: cover;
+}
+
+.galeria__contenido--titulo{
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.reserva{
+    display: flex;
+    height: 93vh;
+    background-color: #533d26;
+    color: whitesmoke;
+}
+
+.reserva__formulario{
+    width: 100%;
+    padding: 10px;
+}
+
+.reserva__titulo{
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.reserva__formulario--edit{
+    width: 100%;
+}
+
+.reserva__mapa{
+    width: 100%;
+}
+
+.footer{
+    background-color: #120804;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__p{
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 20px 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer__map{
+    width: 100%;
+}
+
+.footer__facebook{
+    width: 130px;
+}
+
+.footer__instagram{
+    width: 170px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .footer, .referencia__contenedor, .hero, .historia, .nav__list{
+        flex-direction: column;
+    }
+
+    .hero{
+        height: auto;}
+
+    .hero__contenedor--h1 {
+        font-size: 400%;
+        padding: 10px 7px;
+    }
+
+    .hero__contenedor--h2 {
+        font-size: 200%;
+        padding: 10px 7px;
+    }
+
+    .hero__contenedor--h3 {
+        font-size: 100%;
+        padding: 10px 7px;
+    }
+    .menu {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .historia{
+        height: auto;
+    }
+
+    .historia__titulo {
+        font-size: 100%;
+        margin: 0px;
+    }
+
+    .historia__parrafo {
+        font-size: 100%;
+    }
+
+    .historia__audio {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .historia__fundador {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .reserva {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+}

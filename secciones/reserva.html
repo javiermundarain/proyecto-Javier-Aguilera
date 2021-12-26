@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="shortcut icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__item--secc" href="../index.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__item--secc" href="../secciones/menu.html">Menu</a></li>    
+            <li class="nav__item"><a class="nav__item--secc" href="../secciones/historia.html">Historia</a></li>
+            <li class="nav__item"><a class="nav__item--secc" href="../secciones/galeria.html">Galeria</a></li>
+        </ul>
+    </nav>        
+    </header>
+    <main>
+        <section class="reserva">
+            <article class="reserva__formulario">
+                <h2 class="reserva__titulo">Reserva</h2>
+                <form class="reserva__formulario--edit" action="#" method="get">
+                    <fieldset>
+                        <legend>realice su reserva</legend>
+                        <label for="calendario">calendario</label>
+                        <input type="datetime-local" name="user_calendario" id="calendario">
+                        <label for="nombre">Reserva a nombre de:</label>
+                        <input type="text" name="user_nombre" id="nombre" placeholder="Introduzca su nombre">
+                        <label for="personas">Cant de personas</label>
+                        <select name="user_personas" id="personas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <label for="telefono">Telf de contacto:</label>
+                        <input type="number" name="user_number" id="number" placeholder="introduzca telf de contacto">
+                        <label for="email">Correo electronico:</label>
+                        <input type="email" name="user_email" id="email" placeholder="introduzca su correo">
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="No hace nada">
+            </article>
+                <article class="reserva__formulario">
+                    <h2 class="reserva__titulo">
+                        Ubicacion
+                    </h2>
+                 <iframe class="reserva__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.966778600791!2d-58.45968008505229!3d-34.60500156507247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca03f6ffdd25%3A0xf3da34257f473c4b!2sAv.%20San%20Mart%C3%ADn%202110%2C%20C1416CRW%20CABA!5e0!3m2!1ses!2sar!4v1637891250603!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </article>
+           </form>
+        </section>
+    </main>
+    
+    <footer class="footer"> <!-- / footer -->
+        <section>
+           <article class="footer__p">
+               <h2>Contactanos</h2>
+               <h3>santuario@gmail.com</h3>
+               <h4>telf: 0294-3312159</h4>
+           </article>
+       </section>
+       <section>
+        <article>
+          <h2 class="footer__p">Ubicación</h2>
+          <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.966778600791!2d-58.45968008505229!3d-34.60500156507247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca03f6ffdd25%3A0xf3da34257f473c4b!2sAv.%20San%20Mart%C3%ADn%202110%2C%20C1416CRW%20CABA!5e0!3m2!1ses!2sar!4v1637891250603!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+      </section>
+       <section>
+           <article class="footer__p">
+               <h2>
+                   Redes Sociales
+               </h2>
+               <a href="https://www.facebook.com/tabernamedievaloficial"><img class="footer__facebook" src="../assets/facebook.png" alt="FACEBOOK"></a>
+               <a href="https://www.instagram.com/taberna.medieval/?hl=es-la"><img class="footer__instagram" src="../assets/instagram.png" alt="INSTAGRAM"></a>
+           </article>
+       </section>
+    </footer>
+</body>
+</html>
